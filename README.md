@@ -1,22 +1,38 @@
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+───────────────────────────────────────────────────────────────────
+─██████████████─██████──████████─████████████████───██████████████─
+─██░░░░░░░░░░██─██░░██──██░░░░██─██░░░░░░░░░░░░██───██░░░░░░░░░░██─
+─██░░██████████─██░░██──██░░████─██░░████████░░██───██░░██████░░██─
+─██░░██─────────██░░██──██░░██───██░░██────██░░██───██░░██──██░░██─
+─██░░██████████─██░░██████░░██───██░░████████░░██───██░░██████░░██─
+─██░░░░░░░░░░██─██░░░░░░░░░░██───██░░░░░░░░░░░░██───██░░░░░░░░░░██─
+─██████████░░██─██░░██████░░██───██░░██████░░████───██░░██████░░██─
+─────────██░░██─██░░██──██░░██───██░░██──██░░██─────██░░██──██░░██─
+─██████████░░██─██░░██──██░░████─██░░██──██░░██████─██░░██──██░░██─
+─██░░░░░░░░░░██─██░░██──██░░░░██─██░░██──██░░░░░░██─██░░██──██░░██─
+─██████████████─██████──████████─██████──██████████─██████──██████─
+───────────────────────────────────────────────────────────────────
+
+Chat con `NodeJS`, `express` y `socket.io` modificado por Christopher Velázquez.
+
+Este proyecto tiene el fin de mostrar el uso eficiente de los frameworks disponibles para `node` y en este caso se hace uso de `express` junto con `socket.io` para formar un chat en el cual podemos establecer conversaciones simultaneas entre varios dispositivos al mismo tiempo.
+
+## Antes de inciar
+Debes contar instalado [NodeJS](https://nodejs.org/en/) para que funcione el programa.
+Puedes consultar [express](https://expressjs.com) y [socket.io](https://socket.io) para mayor información.
+
+### Instalación
+Abre una terminal de comandos en la ruta donde piensas trabajar y ejecutamos los comandos:
+* `git clone https://github.com/Christolml/Practica2-Velazquez.git`
+* `npm install` (en la carpeta clonada)
+
+### Ejecutar Chat
+Abre un terminal de comandos ubicada en la ruta de la carpeta raíz del proyecto y ejecuta el siguiente comando: `node .\server.js` para que node levante nuestro servidor de forma local y nos vamos a nuestro navegador en la ruta `localhost:3000`. 
+
+### Detener Chat
+En la misma terminal que levantaste el chat presiona `Ctrl`+`C` y de esa forma detienes el chat.
 
 
-Welcome to your Node.js project on Cloud9 IDE!
 
-This chat example showcases how to use `socket.io` with a static `express` server.
 
-## Running the server
 
-1) Open `server.js` and start the app by clicking on the "Run" button in the top menu.
-
-2) Alternatively you can launch the app from the Terminal:
-
-    $ node server.js
-
-Once the server is running, open the project in the shape of 'https://projectname-username.c9users.io/'. As you enter your name, watch the Users list (on the left) update. Once you press Enter or Send, the message is shared with all connected clients.
