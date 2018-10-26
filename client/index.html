@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
     <style>
       body {
-        padding-top: 60px;
+        background-color: rgb(192, 252, 192);
+        padding-top: 90px;
       }
     </style>
     <script>
@@ -35,7 +36,7 @@
 
         $scope.send = function send() {
           console.log('Enviando mensaje:', $scope.text);
-          socket.emit('mensaje', $scope.text);
+          socket.emit('message', $scope.text);
           $scope.text = '';
         };
 
@@ -50,7 +51,7 @@
       <div class="navbar navbar-fixed-top navbar-inverse">
         <div class="navbar-inner">
           <div class="pull-right">
-            <a href="github.com/Christolml" class="brand">christolml</a>
+            <a href="https://github.com/Christolml" class="brand">christolml</a>
           </div>
         </div>
       </div>
@@ -85,7 +86,7 @@
               <div class="span2"><input type="text" class="input-block-level" ng-model="name" ng-change="setName()" placeholder="Tu nombre"></div>
               <div class="input-append span7">
                 <input type="text" class="span6" ng-model="text" placeholder="Mensaje">
-                <input type="submit" class="span1 btn btn-primary" value="Enviar" ng-disabled="!text">
+                <input type="submit" class="span1 btn btn-danger" value="Enviar" ng-disabled="!text">
               </div>
             </form>
           </div>
